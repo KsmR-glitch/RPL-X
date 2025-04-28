@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Gaya untuk halaman home */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .home-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .header p {
+            font-size: 18px;
+            color: #777;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .card button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .card button:hover {
+            background-color: #45a049;
+        }
+
+        .logout-btn {
+            background-color: #f44336;
+            color: white;
+            font-size: 16px;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            display: block;
+            margin-top: 40px;
+            width: 100%;
+        }
+
+        .logout-btn:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+    <div class="home-container">
+        <div class="header">
+            <h1>Welcome to Your Dashboard</h1>
+            <p>You're now logged in! Enjoy your personalized space.</p>
+        </div>
+
+        <div class="dashboard">
+            <div class="card">
+                <h3>Your Profile</h3>
+                <p>Manage your account settings and profile information.</p>
+                <button onclick="window.location.href='#'">Go to Profile</button>
+            </div>
+
+            <div class="card">
+                <h3>Notifications</h3>
+                <p>Check your latest notifications and messages.</p>
+                <button onclick="window.location.href='#'">View Notifications</button>
+            </div>
+
+            <div class="card">
+                <h3>Settings</h3>
+                <p>Adjust your preferences and app settings.</p>
+                <button onclick="window.location.href='#'">Go to Settings</button>
+            </div>
+
+            <div class="card">
+                <h3>Reports</h3>
+                <p>View and download your activity reports.</p>
+                <button onclick="window.location.href='#'">View Reports</button>
+            </div>
+        </div>
+
+        <button class="logout-btn" onclick="window.location.href='index.html'">Logout</button>
+    </div>
+</body>
+</html>
